@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Floristería Santa Isabel 13 · Coronas, ramos y bodas en Vitoria-Gasteiz (Zaramaga)</title>
+<meta name="description" content="Floristería Santa Isabel 13, frente al cementerio de Santa Isabel en Vitoria-Gasteiz desde 1986. Coronas y centros funerarios con envío al tanatorio, ramos a domicilio, bodas y comuniones. Abierto domingos y festivos. 695 80 93 76.">
+<link rel="canonical" href="https://USUARIO.github.io/santa-isabel-13/"><!-- PENDIENTE: URL final -->
+<meta name="geo.region" content="ES-VI">
+<meta name="geo.placename" content="Vitoria-Gasteiz">
+<meta name="geo.position" content="42.8565574;-2.672436">
+<meta name="ICBM" content="42.8565574, -2.672436">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Floristería Santa Isabel 13 · Vitoria-Gasteiz">
+<meta property="og:description" content="Coronas, centros funerarios, ramos, bodas y comuniones. Abierto domingos y festivos.">
+<meta property="og:image" content="img/og-santaisabel13.jpg"><!-- PENDIENTE: URL absoluta -->
+<meta name="theme-color" content="#8B1A5E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Floristería Santa Isabel 13",
+  "alternateName": "Loredenda Santa Isabel 13",
+  "foundingDate": "1986",
+  "image": "img/fachada.jpg",
+  "telephone": "+34695809376",
+  "email": "goritotorito@gmail.com",
+  "url": "https://cys-floristeriasantaisabel13.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Santa Isabel Kalea, 13, bajo",
+    "postalCode": "01013",
+    "addressLocality": "Vitoria-Gasteiz",
+    "addressRegion": "Álava",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 42.8565574, "longitude": -2.672436 },
+  "hasMap": "https://maps.app.goo.gl/pUSSVrbK3AcihRrr8"
+}
+</script>
+<!-- PENDIENTE: añadir "openingHoursSpecification" y "aggregateRating" al JSON-LD cuando se confirmen -->
+
+<script>
+/* IMÁGENES PROVISIONALES: si falta img/xxx.jpg se carga una foto temporal (loremflickr, Creative Commons).
+   Al subir las fotos reales a /img se usan solas. Antes de publicar, borra los data-temp y esta función. */
+function tmp(el){
+  if(el.dataset.temp && !el.dataset.tried){el.dataset.tried=1;el.src=el.dataset.temp;}
+  else{el.remove();}
+}
+</script>
+
+<style>
+:root{
+  /* Colores del rótulo */
+  --lima:#C8D62B;     /* fondo del rótulo */
+  --lima-l:#F4F7D9;
+  --ciruela:#8B1A5E;  /* letras "SANTA ISABEL 13" */
+  --ciruela-d:#5E1140;
+  --lila:#7B5A9E;     /* flores del rótulo */
+  --negro:#1F1A1D;    /* marco del rótulo */
+  --stone:#EFEBE4;    /* pared de piedra */
+  --muted:#5A5258;
+  --wrap:min(1060px, 100% - 2.5rem);
+  --serif:"Lora", Georgia, "Times New Roman", serif;
+  --sans:"Open Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+:root{padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:1rem;line-height:1.7;color:var(--negro);background:#fff}
+img{max-width:100%;display:block}
+a{color:var(--ciruela)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{width:var(--wrap);margin-inline:auto}
+section{padding-block:clamp(3.5rem,8vw,6rem)}
+.head{text-align:center;margin-bottom:2.6rem}
+.head p{margin-inline:auto;color:var(--muted)}
+.head::after{content:"";display:block;width:48px;height:3px;background:var(--lima);margin:1.1rem auto 0}
+:focus-visible{outline:3px solid var(--lila);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ciruela);color:#fff;padding:.6rem 1rem;z-index:100}
+.skip:focus{left:1rem;top:1rem}
+
+/* Datos pendientes: quitar la clase al confirmar */
+.pend{outline:2px dashed var(--ciruela);outline-offset:2px}
+
+/* Huecos de foto */
+.ph{position:relative;background:var(--lima-l);overflow:hidden;margin:0}
+.ph::before{content:attr(data-file);position:absolute;inset:0;display:grid;place-items:center;
+  font:600 .85rem/1.2 var(--sans);color:var(--ciruela);text-align:center;padding:1rem}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Botones rectangulares (Florium) */
+.btn{display:inline-block;font:600 .85rem/1 var(--sans);text-transform:uppercase;letter-spacing:.06em;
+  text-decoration:none;padding:1.05rem 1.9rem;border:1px solid transparent;cursor:pointer}
+.btn-white{background:#fff;color:var(--ciruela-d)}
+.btn-white:hover{background:var(--lima);color:var(--ciruela-d)}
+.btn-lima{background:var(--lima);color:var(--ciruela-d)}
+.btn-lima:hover{background:#fff}
+.btn-dark{background:var(--ciruela);color:#fff}
+.btn-dark:hover{background:var(--ciruela-d)}
+.btn-line{border-color:var(--ciruela);color:var(--ciruela)}
+.btn-line:hover{background:var(--ciruela);color:#fff}
+.btn-line-w{border-color:#fff;color:#fff}
+.btn-line-w:hover{background:#fff;color:var(--ciruela-d)}
+
+/* ===== CABECERA (Florium: contacto | logo | iconos, línea, menú centrado, línea) ===== */
+.hero{position:relative;min-height:min(92vh,780px);display:flex;flex-direction:column;color:#fff;overflow:hidden}
+header.site{position:relative;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+.h-top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-block:1.6rem 1.4rem;
+  border-bottom:1px solid rgba(255,255,255,.35)}
+.h-contact{font-size:.9rem;line-height:1.6}
+.h-contact a{color:#fff;text-decoration:none}
+.h-contact a:hover{text-decoration:underline}
+.logo{color:#fff;text-decoration:none;text-align:center;line-height:1;display:flex;flex-direction:column;align-items:center}
+.logo svg{width:34px;height:26px;margin-bottom:.3rem}
+.logo b{font:500 1.6rem/1 var(--serif);letter-spacing:.06em}
+.logo i{font:italic 400 .9rem/1.4 var(--serif)}
+.h-icons{display:flex;justify-content:flex-end;align-items:center;gap:1.1rem}
+.h-icons a{color:#fff;display:grid;place-items:center}
+.h-icons svg{width:22px;height:22px}
+.h-icons .lang{width:32px;height:32px;border-radius:50%;background:#fff;color:var(--ciruela-d);font-size:.85rem;
+  text-decoration:none;display:grid;place-items:center}
+nav.main{border-bottom:1px solid rgba(255,255,255,.35)}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:2.6rem}
+nav.main a{display:block;padding:1.15rem 0;color:#fff;text-decoration:none;font-size:.8rem;
+  text-transform:uppercase;letter-spacing:.06em}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--lima)}
+.menu-btn{display:none;background:none;border:1px solid #fff;color:#fff;padding:.45rem .8rem;
+  font:600 .8rem var(--sans);text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
+
+/* ===== SLIDER A PANTALLA COMPLETA ===== */
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .6s ease}
+.slide.on{opacity:1;visibility:visible}
+.slide .ph{position:absolute;inset:0;background:var(--ciruela)}
+.slide .ph::before{color:#fff;place-items:end center;padding-bottom:5rem}
+.slide::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(62,10,42,.72) 0%,rgba(62,10,42,.42) 45%,rgba(62,10,42,0) 78%)}
+.slide .txt{position:absolute;z-index:2;inset:0;display:flex;align-items:center}
+.slide .txt .wrap{padding-top:9rem}
+.kicker{font:400 clamp(1.1rem,2.1vw,1.6rem)/1.2 var(--serif);text-transform:uppercase;margin:0 0 .6rem}
+.big{font:400 clamp(2.7rem,7.2vw,5.4rem)/1 var(--serif);text-transform:uppercase;letter-spacing:.02em;margin:0 0 1.6rem}
+.slide .txt p.lead{font-size:1.1rem;max-width:31rem;margin-bottom:2.4rem}
+.acts{display:flex;flex-wrap:wrap;gap:.8rem}
+.arrow{position:absolute;z-index:4;top:58%;transform:translateY(-50%);background:none;border:0;color:#fff;
+  cursor:pointer;padding:.8rem}
+.arrow svg{width:22px;height:40px;fill:none;stroke:currentColor;stroke-width:2}
+.arrow.prev{left:clamp(.5rem,5vw,6rem)}
+.arrow.next{right:clamp(.5rem,5vw,6rem)}
+
+/* ===== FRANJA ===== */
+.strip{background:var(--lima);color:var(--ciruela-d);padding-block:2.2rem}
+.strip ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center}
+.strip svg{width:34px;height:34px;fill:var(--ciruela);margin:0 auto .5rem}
+.strip strong{display:block;font:400 1.1rem/1.3 var(--serif)}
+.strip small{font-size:.92rem}
+
+/* ===== NOSOTROS ===== */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.about .ph{aspect-ratio:4/5}
+.about p{color:var(--muted)}
+
+/* ===== SERVICIOS ===== */
+.services{background:var(--stone)}
+.services .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem 1.8rem}
+.svc{text-align:center;background:#fff;padding-bottom:1.6rem;border-bottom:3px solid var(--lima)}
+.svc .ph{aspect-ratio:4/3;margin-bottom:1.3rem}
+.svc h3,.svc p{padding-inline:1.2rem}
+.svc p{color:var(--muted);font-size:.97rem;margin-inline:auto}
+
+/* ===== BANNER ===== */
+.banner{position:relative;color:#fff;text-align:center;padding-block:clamp(4.5rem,11vw,8rem)}
+.banner .ph{position:absolute;inset:0;background:var(--ciruela-d)}
+.banner .ph::before{color:#fff;place-items:start center;padding-top:1rem;opacity:.75}
+.banner .ph img{filter:brightness(.4)}
+.banner .wrap{position:relative}
+.banner p{margin-inline:auto;font-size:1.1rem;margin-bottom:2rem}
+.banner .acts{justify-content:center}
+
+/* ===== GALERÍA ===== */
+.gallery .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.gallery .ph{aspect-ratio:1/1}
+.gallery .more{text-align:center;margin-top:2.2rem}
+
+/* ===== OPINIONES ===== */
+.reviews{background:var(--lima-l)}
+.score{text-align:center;margin-bottom:2.4rem}
+.score b{font:400 3rem/1 var(--serif);display:block;color:var(--ciruela)}
+.stars{color:var(--ciruela);font-size:1.3rem;letter-spacing:.15em}
+.reviews .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+blockquote{margin:0;background:#fff;padding:2rem 1.7rem;text-align:center}
+blockquote p{font:italic 400 1.05rem/1.6 var(--serif);margin-inline:auto}
+blockquote footer{font-weight:600;font-size:.9rem}
+.reviews .all{text-align:center;margin-top:2rem}
+
+/* ===== CÓMO ENCARGAR ===== */
+.steps ol{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:54px;height:54px;margin:0 auto 1rem;
+  background:var(--lima);border-radius:50%;font:400 1.4rem/1 var(--serif);color:var(--ciruela-d)}
+.steps p{margin-inline:auto;color:var(--muted)}
+
+/* ===== CONTACTO ===== */
+.contact{background:var(--ciruela-d);color:#fff}
+.contact a{color:#fff}
+.contact .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+.contact dl{margin:0 0 1.8rem}
+.contact dt{font:400 1.1rem var(--serif);color:var(--lima);margin-top:1.1rem}
+.contact dd{margin:.2rem 0 0}
+.contact table{border-collapse:collapse}
+.contact td{padding:.15rem 1.2rem .15rem 0;vertical-align:top}
+.contact .acts{gap:.8rem}
+.map{aspect-ratio:4/3;background:#3a0c28}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+footer.site{background:var(--negro);color:#D6D0D3;font-size:.9rem;padding-block:1.6rem}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+footer.site a{color:#fff}
+
+/* Botones flotantes (móvil) */
+.float{display:none;position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;
+  flex-direction:column;gap:.6rem}
+.float a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;box-shadow:0 6px 18px rgba(31,26,29,.35)}
+.float .f-call{background:var(--ciruela)}
+.float .f-wa{background:#1E7E45}
+.float svg{width:26px;height:26px;fill:currentColor}
+
+@media (max-width:900px){
+  .h-top{grid-template-columns:auto 1fr auto;gap:1rem}
+  .h-contact{display:none}
+  .logo{grid-column:1;align-items:flex-start;text-align:left}
+  .h-icons{grid-column:3}
+  .menu-btn{display:block}
+  nav.main{display:none;background:rgba(62,10,42,.97);border:0}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:0;padding:.4rem 1.25rem 1rem}
+  nav.main a{padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .slide .txt .wrap{padding-top:6rem}
+  .arrow{top:auto;bottom:1rem;transform:none}
+  .strip ul{grid-template-columns:1fr 1fr}
+  .about .wrap,.contact .wrap{grid-template-columns:1fr}
+  .services .grid,.reviews .grid,.steps ol{grid-template-columns:1fr 1fr}
+  .float{display:flex}
+  footer.site{padding-bottom:9rem}
+}
+@media (max-width:560px){
+  .strip ul,.services .grid,.reviews .grid,.steps ol{grid-template-columns:1fr}
+  .gallery .grid{grid-template-columns:1fr 1fr}
+  .h-icons .lang{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="hero" id="inicio">
+  <header class="site">
+    <div class="wrap h-top">
+      <div class="h-contact">
+        Llámanos: <a href="tel:+34695809376">695 80 93 76</a><br>
+        <a href="mailto:goritotorito@gmail.com">goritotorito@gmail.com</a>
+      </div>
+      <a class="logo" href="#inicio" aria-label="Floristería Santa Isabel 13, inicio">
+        <svg viewBox="0 0 34 26" aria-hidden="true"><g fill="#C8D62B"><path d="M17 2c3 4 3 9 0 14-3-5-3-10 0-14z"/><path d="M8 6c4 2 7 6 8 11-5-1-8-5-8-11z"/><path d="M26 6c-4 2-7 6-8 11 5-1 8-5 8-11z"/><path d="M2 12c5 0 9 3 13 6-5 1-10 0-13-6z"/><path d="M32 12c-5 0-9 3-13 6 5 1 10 0 13-6z"/></g><rect x="7" y="21" width="20" height="2" fill="#fff"/></svg>
+        <b>SANTA ISABEL 13</b><i>Floristería · Loredenda</i>
+      </a>
+      <div class="h-icons">
+        <a href="https://wa.me/34695809376" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3.3 4.4c-.2 0-.5 0-.8.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5z"/></svg></a>
+        <a href="tel:+34695809376" aria-label="Llamar"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+        <!-- Selector de idioma de la plantilla: activar si se hace versión en euskera -->
+        <!-- <a class="lang" href="#" lang="eu">eu</a> -->
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+      </div>
+    </div>
+    <nav class="main wrap" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#inicio" aria-current="page">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slides" aria-roledescription="carrusel" aria-label="Presentación">
+    <div class="slide on" role="group" aria-roledescription="diapositiva" aria-label="1 de 3">
+      <figure class="ph" data-file="img/hero-1.jpg"><img src="img/hero-1.jpg" data-temp="https://loremflickr.com/1920/1080/flowershop,bouquet?lock=21" alt="" onerror="tmp(this)"></figure>
+      <div class="txt"><div class="wrap">
+        <p class="kicker">Floristería en Zaramaga desde 1986</p>
+        <h1 class="big">Santa Isabel 13</h1>
+        <p class="lead">Frente al cementerio de Santa Isabel, en Vitoria-Gasteiz. Abierto también domingos y festivos.</p>
+        <div class="acts">
+          <a class="btn btn-white" href="#servicios">Ver servicios</a>
+          <a class="btn btn-line-w" href="https://wa.me/34695809376" rel="noopener">Pedir por WhatsApp</a>
+        </div>
+      </div></div>
+    </div>
+    <div class="slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 3" aria-hidden="true">
+      <figure class="ph" data-file="img/hero-2.jpg"><img src="img/hero-2.jpg" data-temp="https://loremflickr.com/1920/1080/white,lilies?lock=22" alt="" loading="lazy" onerror="tmp(this)"></figure>
+      <div class="txt"><div class="wrap">
+        <p class="kicker">Coronas y centros funerarios</p>
+        <h2 class="big">Despedidas</h2>
+        <p class="lead">Preparamos coronas y centros con envío al tanatorio. Llámanos y nos encargamos.</p>
+        <div class="acts"><a class="btn btn-white" href="tel:+34695809376">Llamar al 695 80 93 76</a></div>
+      </div></div>
+    </div>
+    <div class="slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 3" aria-hidden="true">
+      <figure class="ph" data-file="img/hero-3.jpg"><img src="img/hero-3.jpg" data-temp="https://loremflickr.com/1920/1080/wedding,bouquet?lock=23" alt="" loading="lazy" onerror="tmp(this)"></figure>
+      <div class="txt"><div class="wrap">
+        <p class="kicker">Bodas y comuniones</p>
+        <h2 class="big">Celebraciones</h2>
+        <p class="lead">Decoración floral, ramos y centros para el día que importa.</p>
+        <div class="acts"><a class="btn btn-white" href="#contacto">Pedir información</a></div>
+      </div></div>
+    </div>
+  </div>
+  <button class="arrow prev" type="button" data-dir="-1" aria-label="Diapositiva anterior"><svg viewBox="0 0 22 40" aria-hidden="true"><path d="M20 2 2 20l18 18"/></svg></button>
+  <button class="arrow next" type="button" data-dir="1" aria-label="Diapositiva siguiente"><svg viewBox="0 0 22 40" aria-hidden="true"><path d="m2 2 18 18L2 38"/></svg></button>
+</div>
+
+<main id="main">
+<div class="strip">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><strong>Frente al cementerio</strong><small>Santa Isabel, 13 · Zaramaga</small></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11z"/></svg><strong>Domingos y festivos</strong><small>También abrimos</small></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2z"/></svg><strong>Pedidos por WhatsApp</strong><small>695 80 93 76</small></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h11v9H3zM14 8h4l3 3v3h-7zM7 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg><strong>Entrega a domicilio</strong><small>Y envío al tanatorio</small></li>
+  </ul>
+</div>
+
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <figure class="ph" data-file="img/fachada.jpg"><img src="img/fachada.jpg" data-temp="https://loremflickr.com/800/1000/florist,shop?lock=24" alt="Rótulo verde lima de Floristería Santa Isabel 13 en la calle Santa Isabel" loading="lazy" onerror="tmp(this)"></figure>
+    <div>
+      <h2>Desde 1986 en el barrio de Zaramaga</h2>
+      <p>Somos una floristería familiar en la calle Santa Isabel, 13, justo frente al cementerio. Llevamos desde 1986 preparando flores para particulares, celebraciones y despedidas.</p>
+      <p>Trabajamos con flor y planta de temporada, y adaptamos cada encargo a lo que necesitas y a tu presupuesto. También participamos en City of Flowers Vitoria-Gasteiz decorando el monumento a Manuel Iradier.</p>
+      <a class="btn btn-line" href="#contacto">Cómo llegar</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS (sustituye a la tienda con precios de la plantilla) -->
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="head">
+      <h2>Lo que hacemos</h2>
+      <p>Para presupuestos, escríbenos por WhatsApp, llámanos o pásate por la tienda.</p>
+    </div>
+    <div class="grid">
+      <article class="svc"><figure class="ph" data-file="img/coronas.jpg"><img src="img/coronas.jpg" data-temp="https://loremflickr.com/800/600/funeral,wreath?lock=25" alt="Corona funeraria de flores" loading="lazy" onerror="tmp(this)"></figure><h3>Coronas</h3><p>Coronas funerarias con envío al tanatorio.</p></article>
+      <article class="svc"><figure class="ph" data-file="img/centros-funerarios.jpg"><img src="img/centros-funerarios.jpg" data-temp="https://loremflickr.com/800/600/white,flowers,arrangement?lock=26" alt="Centro funerario de flores blancas" loading="lazy" onerror="tmp(this)"></figure><h3>Centros funerarios</h3><p>Centros y ramos para despedir con respeto.</p></article>
+      <article class="svc"><figure class="ph" data-file="img/ramos.jpg"><img src="img/ramos.jpg" data-temp="https://loremflickr.com/800/600/bouquet,flowers?lock=27" alt="Ramo de flores variadas" loading="lazy" onerror="tmp(this)"></figure><h3>Ramos a domicilio</h3><p>Para cumpleaños, aniversarios o un detalle porque sí.</p></article>
+      <article class="svc"><figure class="ph" data-file="img/bodas.jpg"><img src="img/bodas.jpg" data-temp="https://loremflickr.com/800/600/bridal,bouquet?lock=28" alt="Ramo de novia" loading="lazy" onerror="tmp(this)"></figure><h3>Bodas</h3><p>Ramo de novia, prendidos y decoración floral.</p></article>
+      <article class="svc"><figure class="ph" data-file="img/comuniones.jpg"><img src="img/comuniones.jpg" data-temp="https://loremflickr.com/800/600/white,roses?lock=29" alt="Arreglo floral para comunión" loading="lazy" onerror="tmp(this)"></figure><h3>Comuniones</h3><p>Detalles florales para la ceremonia y la celebración.</p></article>
+      <article class="svc"><figure class="ph" data-file="img/regalo.jpg"><img src="img/regalo.jpg" data-temp="https://loremflickr.com/800/600/pottedplant,gift?lock=30" alt="Plantas y artículos de regalo" loading="lazy" onerror="tmp(this)"></figure><h3>Plantas y regalo</h3><p>Plantas, complementos y artículos de regalo.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="banner" aria-labelledby="banner-t">
+  <figure class="ph" data-file="img/banner.jpg"><img src="img/banner.jpg" data-temp="https://loremflickr.com/1920/900/florist?lock=31" alt="" loading="lazy" onerror="tmp(this)"></figure>
+  <div class="wrap">
+    <h2 id="banner-t">¿Necesitas flores hoy, aunque sea domingo?</h2>
+    <p>Abrimos domingos y festivos por la mañana. Escríbenos y te lo dejamos preparado.</p>
+    <div class="acts">
+      <a class="btn btn-lima" href="https://wa.me/34695809376" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-line-w" href="tel:+34695809376">Llamar</a>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="head"><h2>Nuestros trabajos</h2><p>Algunos de los encargos que hemos preparado.</p></div>
+    <div class="grid">
+      <figure class="ph" data-file="img/galeria-1.jpg"><img src="img/galeria-1.jpg" data-temp="https://loremflickr.com/600/600/roses?lock=32" alt="Trabajo floral 1" loading="lazy" onerror="tmp(this)"></figure>
+      <figure class="ph" data-file="img/galeria-2.jpg"><img src="img/galeria-2.jpg" data-temp="https://loremflickr.com/600/600/lilies?lock=33" alt="Trabajo floral 2" loading="lazy" onerror="tmp(this)"></figure>
+      <figure class="ph" data-file="img/galeria-3.jpg"><img src="img/galeria-3.jpg" data-temp="https://loremflickr.com/600/600/chrysanthemum?lock=34" alt="Trabajo floral 3" loading="lazy" onerror="tmp(this)"></figure>
+      <figure class="ph" data-file="img/galeria-4.jpg"><img src="img/galeria-4.jpg" data-temp="https://loremflickr.com/600/600/tulips?lock=35" alt="Trabajo floral 4" loading="lazy" onerror="tmp(this)"></figure>
+      <figure class="ph" data-file="img/galeria-5.jpg"><img src="img/galeria-5.jpg" data-temp="https://loremflickr.com/600/600/orchid?lock=36" alt="Trabajo floral 5" loading="lazy" onerror="tmp(this)"></figure>
+      <figure class="ph" data-file="img/galeria-6.jpg"><img src="img/galeria-6.jpg" data-temp="https://loremflickr.com/600/600/sunflowers?lock=37" alt="Trabajo floral 6" loading="lazy" onerror="tmp(this)"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="opiniones">
+  <div class="wrap">
+    <div class="head"><h2>Lo que dicen nuestros clientes</h2></div>
+    <div class="score">
+      <b class="pend">4,6</b>
+      <span class="stars" aria-hidden="true">★★★★★</span><br>
+      <span class="pend">49 opiniones en Google</span>
+    </div>
+    <div class="grid">
+      <blockquote><p>“Excelente atención, precios súper accesibles. Le mostré una idea en foto y me dejó encantada con el resultado.”</p><footer class="pend">[Autor pendiente]</footer></blockquote>
+      <blockquote><p>“Domingo y casi las dos de la tarde. Me respondieron enseguida al teléfono y me esperaron a que llegara.”</p><footer class="pend">[Autor pendiente]</footer></blockquote>
+      <blockquote><p>“Una maravilla como siempre, atentos y rápidos.”</p><footer class="pend">[Autor pendiente]</footer></blockquote>
+    </div>
+    <p class="all"><a href="https://maps.app.goo.gl/pUSSVrbK3AcihRrr8" rel="noopener">Ver todas las opiniones en Google</a></p>
+  </div>
+</section>
+
+<!-- CÓMO ENCARGAR (sustituye al blog de la plantilla) -->
+<section class="steps">
+  <div class="wrap">
+    <div class="head"><h2>Cómo hacer un encargo</h2></div>
+    <ol>
+      <li><h3>Escríbenos o llama</h3><p>Por WhatsApp o teléfono al 695 80 93 76, o en la tienda.</p></li>
+      <li><h3>Cuéntanos qué necesitas</h3><p>La ocasión, el estilo y el presupuesto. Si tienes una foto de referencia, mándala.</p></li>
+      <li><h3>Recógelo o te lo llevamos</h3><p>Recogida en tienda, entrega a domicilio o envío al tanatorio.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACTO Y MAPA (sustituye a la newsletter) -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>Visítanos o escríbenos</h2>
+      <dl>
+        <dt>Dirección</dt><dd>Santa Isabel Kalea, 13, bajo<br>01013 Vitoria-Gasteiz (Álava)<br>Frente al cementerio de Santa Isabel</dd>
+        <dt>Teléfono y WhatsApp</dt><dd><a href="tel:+34695809376">695 80 93 76</a></dd>
+        <dt>Email</dt><dd><a href="mailto:goritotorito@gmail.com">goritotorito@gmail.com</a></dd>
+        <dt>Horario</dt>
+        <dd>
+          <!-- PENDIENTE: horario de la web del Ayuntamiento; Google y otros directorios dan cierre a las 19:30. Confirmar -->
+          <table class="pend">
+            <tr><td>Lunes</td><td>10:00–14:30</td></tr>
+            <tr><td>Martes a viernes</td><td>10:00–19:00</td></tr>
+            <tr><td>Sábados, domingos y festivos</td><td>10:00–14:30</td></tr>
+          </table>
+        </dd>
+      </dl>
+      <div class="acts">
+        <a class="btn btn-lima" href="https://wa.me/34695809376" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn-line-w" href="tel:+34695809376">Llamar</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Mapa: Floristería Santa Isabel 13, Vitoria-Gasteiz" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Florister%C3%ADa+Santa+Isabel+13,+Santa+Isabel+Kalea+13,+01013+Vitoria-Gasteiz&z=17&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© <span id="y">2026</span> Floristería Santa Isabel 13 · Santa Isabel, 13 · Vitoria-Gasteiz</span>
+    <span><a href="https://wa.me/34695809376" rel="noopener">WhatsApp</a> · <a href="mailto:goritotorito@gmail.com">Email</a></span>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="f-wa" href="https://wa.me/34695809376" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm-3.3 6.2c-.2 0-.5 0-.8.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5z"/></svg></a>
+  <a class="f-call" href="tel:+34695809376" aria-label="Llamar a Floristería Santa Isabel 13"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn'), nav=document.getElementById('menu');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open);
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  });
+  var slides=[].slice.call(document.querySelectorAll('.slide')), i=0;
+  function go(n){
+    i=(n+slides.length)%slides.length;
+    slides.forEach(function(s,k){s.classList.toggle('on',k===i);s.setAttribute('aria-hidden',k!==i);});
+  }
+  document.querySelectorAll('[data-dir]').forEach(function(b){
+    b.addEventListener('click',function(){go(i + +b.dataset.dir)});
+  });
+  document.getElementById('y').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
